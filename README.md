@@ -78,7 +78,7 @@ f = Filepath(directory, extension)
 s = Findstatus(directory, f.filelist, statuslowre, outputlist)
 ```
 ## dunder method
-Experiment to use magic to make a custom iterator class with __init__, __next__ and __iter__ methods.
+Example of using dunder methods to define a custom iterator class.
 ```python
 class EnhancedFilepath(object): #for experimental purpose => dunder
     def __init__(self, path, extension, filelist=[]):
