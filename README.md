@@ -1,7 +1,7 @@
 
 # StatusSearch
-This program is dedicated to quickly finding several types of devices statuses in a large volume of logfiles. Prior the search the data batches coming from each device need to be processed. I use os glob shutil and zipfile modules to unzip handle folders/files. For search I use regular expressions to compile them re package gives me a hand. The main purpose of this project were driven by the demand to find a fast solution for running through large amount of files so it is not yet full-proof and need to be run with manual intervention.
-##pkgproc
+This program is dedicated to quickly finding several types of devices statuses in a large volume of logfiles. Prior the search the data batches coming from each device need to be processed. I use os glob shutil and zipfile modules to unzip handle folders/files. For search I use regular expressions to compile them re package gives me a hand. The main purpose of this project were driven by the demand to find a fast solution for running through large amount of files so it is not yet fullproof and need to be run with manual intervention.
+## pkgproc
 ```python
 class Uzip:
     def __init__(self, path: str):
@@ -27,7 +27,7 @@ class Cuttree:
             shutil.rmtree(os.path.join(self.path, str(folder + '\\C')))
 ```
 The platform where the original zips gathered compress the requested files in the original path where those located on the device. As it is inevitable to open manually the outputted files after the run of the app the user can define the folder where to move the files.
-##statussearch
+## statussearch
 Retrieves a file list of a certain user defined extension
 ```python
 class Filepath:
